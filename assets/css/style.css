@@ -3891,4 +3891,42 @@ hero section design
   border: 1px solid var(--td-white) !important;
 }
 
+.td-brands {
+  background-color: #f6f6f6;
+  padding: 80px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .td-brands {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767px) {
+  .td-brands {
+    padding: 40px 0;
+  }
+}
+.td-brands-section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.td-brands-section-title h5 {
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.td-brands-img img {
+  height: 56px;
+  width: unset;
+}
+
+.td-brand-slide-element {
+  background: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */

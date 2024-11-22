@@ -6,11 +6,18 @@
   var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
+      clickable: true, // Allow bullets to be clickable
     },
     navigation: {
       nextEl: ".custom-btn-next",
       prevEl: ".custom-btn-prev",
     },
+  });
+  $(".custom-btn-next").on("click", function () {
+    swiper.slideNext();
+  });
+  $(".custom-btn-prev").on("click", function () {
+    swiper.slidePrev();
   });
 
 

@@ -1,3 +1,9 @@
+@use "../utils" as *;
+
+/*----------------------------
+offcanvas section design
+------------------------------*/
+
 .td-offcanvas {
   position: fixed;
   z-index: 99;
@@ -45,6 +51,10 @@
   }
   &-buttons {
     margin-top: 20px;
+    display: block;
+    @media #{$md} {
+      display: none;
+    }
   }
   &-overlay {
     position: fixed;

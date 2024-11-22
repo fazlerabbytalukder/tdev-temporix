@@ -1,5 +1,9 @@
 @use "../utils" as *;
 
+/*----------------------------
+common button design
+------------------------------*/
+
 .cta-button {
   @media #{$xs} {
     display: none;
@@ -44,7 +48,7 @@
 
 .bar-button {
   display: none;
-  @media #{$xs} {
+  @media #{$md,$xs} {
     display: block;
   }
   button {

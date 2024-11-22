@@ -6,6 +6,9 @@ location section design
 
 .td-location {
   margin-top: 100px;
+  @media #{$lg,$md} {
+    margin-top: 70px;
+  }
   @media #{$xs} {
     margin-top: 60px;
   }
@@ -77,7 +80,7 @@ location section design
       }
       img {
         animation: rotate-infinite 10s linear infinite;
-        @media #{$xl, $lg, $md, $sm, $xs} {
+        @media #{$xxl,$xl, $lg, $md, $sm, $xs} {
           display: none;
         }
       }

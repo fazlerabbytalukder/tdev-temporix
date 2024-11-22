@@ -3775,9 +3775,14 @@ brands section design
   background-color: #f6f6f6;
   padding: 80px 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .td-brands {
     padding: 60px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .td-brands {
+    padding: 50px 0;
   }
 }
 @media (max-width: 767px) {
@@ -3802,6 +3807,11 @@ brands section design
 }
 @media (max-width: 767px) {
   .td-brands-section-title h5 {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .td-brands-section-title h5 {
     margin-bottom: 30px;
   }
 }
@@ -3819,6 +3829,11 @@ location section design
 ------------------------------*/
 .td-location {
   margin-top: 100px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .td-location {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 767px) {
   .td-location {
@@ -3902,7 +3917,7 @@ location section design
 .td-location-elements-square img {
   animation: rotate-infinite 10s linear infinite;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+@media only screen and (min-width: 1400px) and (max-width: 4000px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .td-location-elements-square img {
     display: none;
   }

@@ -1,0 +1,37 @@
+// @use "../../utils" as *;
+
+.cta-button {
+  &-one {
+    color: var(--td-theme-bg-color);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 10px 20px;
+    background-color: var(--td-theme-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--td-theme-color);
+      background-color: rgba(255, 255, 255, 0.06);
+    }
+  }
+  &-two {
+    color: var(--td-white);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.06);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 16px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--td-theme-bg-color);
+      background-color: var(--td-theme-color);
+    }
+  }
+}

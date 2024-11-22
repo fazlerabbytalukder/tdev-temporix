@@ -1,0 +1,1 @@
+>sass --watch "D:\WEB\ASSIGNMENT\tdevs\assignment\assets\scss\main.scss":"D:\WEB\ASSIGNMENT\tdevs\assignment\assets\css\style.css"

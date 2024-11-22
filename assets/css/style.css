@@ -3820,17 +3820,32 @@ location section design
 .td-location {
   margin-top: 100px;
 }
+@media (max-width: 767px) {
+  .td-location {
+    margin-top: 60px;
+  }
+}
 .td-location-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
 }
+@media (max-width: 767px) {
+  .td-location-title {
+    margin-bottom: 35px;
+  }
+}
 .td-location-title h1 {
   color: #222;
   font-size: 40px;
   font-weight: 700;
   text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .td-location-title h1 {
+    font-size: 32px;
+  }
 }
 .td-location-title-sec {
   display: flex;
@@ -3866,14 +3881,68 @@ location section design
   align-items: center;
   flex-shrink: 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .td-location-card a {
+    margin: 10px;
+  }
+}
 .td-location-card a img {
   width: 20px;
+}
+.td-location-elements-square {
+  position: absolute;
+  top: 0;
+  right: 1%;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1700px) {
+  .td-location-elements-square {
+    top: 15%;
+  }
+}
+.td-location-elements-square img {
+  animation: rotate-infinite 10s linear infinite;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .td-location-elements-square img {
+    display: none;
+  }
+}
+.td-location-elements-star {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1700px) {
+  .td-location-elements-star {
+    top: 10%;
+  }
+}
+.td-location-elements-star img {
+  animation: rotate-infinite 10s linear infinite;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .td-location-elements-star img {
+    display: none;
+  }
+}
+@keyframes rotate-infinite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .location-btn {
   padding: 10px;
   border-radius: 50%;
   background-color: #222;
+}
+@media (max-width: 767px) {
+  .location-btn {
+    padding: 5px;
+  }
 }
 
 .location-slider-btn-next {

@@ -74,13 +74,13 @@ location section design
     &-square {
       position: absolute;
       top: 0;
-      right: 1%;
+      right: 3%;
       @media #{$xxlm} {
         top: 15%;
       }
       img {
         animation: rotate-infinite 10s linear infinite;
-        @media #{$xxl,$xl, $lg, $md, $sm, $xs} {
+        @media #{$xl, $lg, $md, $sm, $xs} {
           display: none;
         }
       }

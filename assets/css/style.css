@@ -3907,7 +3907,7 @@ location section design
 .td-location-elements-square {
   position: absolute;
   top: 0;
-  right: 1%;
+  right: 3%;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1700px) {
   .td-location-elements-square {
@@ -3917,7 +3917,7 @@ location section design
 .td-location-elements-square img {
   animation: rotate-infinite 10s linear infinite;
 }
-@media only screen and (min-width: 1400px) and (max-width: 4000px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .td-location-elements-square img {
     display: none;
   }

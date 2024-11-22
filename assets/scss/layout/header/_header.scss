@@ -10,6 +10,9 @@ header section design
     @media #{$lg} {
       padding: 15px 15px;
     }
+    @media #{$xs} {
+      padding: 15px 0px;
+    }
   }
   .nav {
     @media #{$md,$sm,$xs} {

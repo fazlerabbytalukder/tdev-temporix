@@ -11,6 +11,11 @@
   --td-fonts-inter: "inter", sans-serif;
 }
 
+@media (max-width: 767px) {
+  .cta-button {
+    display: none;
+  }
+}
 .cta-button-one {
   color: var(--td-theme-bg-color);
   font-size: 13px;
@@ -41,6 +46,18 @@
 .cta-button-two:hover {
   color: var(--td-theme-bg-color);
   background-color: var(--td-theme-color);
+}
+
+.bar-button {
+  display: none;
+}
+@media (max-width: 767px) {
+  .bar-button {
+    display: block;
+  }
+}
+.bar-button button {
+  color: var(--td-white);
 }
 
 * {
@@ -3493,6 +3510,11 @@ header section design
     padding: 15px 15px;
   }
 }
+@media (max-width: 767px) {
+  .header-full {
+    padding: 15px 0px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .header .nav {
     display: none;
@@ -3539,6 +3561,11 @@ hero section design
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-section-full {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
   .hero-section-full {
     flex-direction: column;
   }
@@ -3598,7 +3625,7 @@ hero section design
     font-size: 40px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .hero-section-full-left h1 {
     font-size: 50px;
     text-align: center;
@@ -3621,7 +3648,7 @@ hero section design
     font-size: 16px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .hero-section-full-left p {
     font-size: 16px;
     text-align: center;
@@ -3640,7 +3667,7 @@ hero section design
     width: 50%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .hero-section-full-right {
     width: 100%;
   }

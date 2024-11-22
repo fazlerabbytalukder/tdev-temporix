@@ -17,6 +17,9 @@ hero section design
     @media #{$md} {
       flex-direction: column;
     }
+    @media #{$xs} {
+      flex-direction: column;
+    }
     &-left {
       width: 45.9%;
       padding-left: 15.7%;
@@ -56,7 +59,7 @@ hero section design
         @media #{$lg} {
           font-size: 40px;
         }
-        @media #{$md} {
+        @media #{$md,$sm,$xs} {
           font-size: 50px;
           text-align: center;
         }
@@ -73,7 +76,7 @@ hero section design
         @media #{$lg} {
           font-size: 16px;
         }
-        @media #{$md} {
+        @media #{$md,$sm,$xs} {
           font-size: 16px;
           text-align: center;
         }
@@ -87,7 +90,7 @@ hero section design
       @media #{$lg} {
         width: 50%;
       }
-      @media #{$md} {
+      @media #{$md,$xs,$sm} {
         width: 100%;
       }
       img {

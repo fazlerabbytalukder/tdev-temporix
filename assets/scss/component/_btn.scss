@@ -1,6 +1,9 @@
-// @use "../../utils" as *;
+@use "../utils" as *;
 
 .cta-button {
+  @media #{$xs} {
+    display: none;
+  }
   &-one {
     color: var(--td-theme-bg-color);
     font-size: 13px;
@@ -33,5 +36,15 @@
       color: var(--td-theme-bg-color);
       background-color: var(--td-theme-color);
     }
+  }
+}
+
+.bar-button {
+  display: none;
+  @media #{$xs} {
+    display: block;
+  }
+  button {
+    color: var(--td-white);
   }
 }

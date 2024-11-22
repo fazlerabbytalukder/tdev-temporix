@@ -1,6 +1,6 @@
-@use 'utils' as *;
+@use "utils" as *;
 
-@forward 'utils';
-@forward 'component';
-@forward 'theme';
-@forward 'layout';
+@forward "utils";
+@forward "theme";
+@forward "layout";
+@forward "component";

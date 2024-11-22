@@ -1,0 +1,82 @@
+@use "../../utils" as *;
+
+/*----------------------------
+location section design
+------------------------------*/
+
+.td-location {
+  margin-top: 100px;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    h1 {
+      color: #222;
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+    &-sec {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    &-button {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &-card {
+    border-radius: 24px;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+    }
+    a {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(7px);
+      display: inline-flex;
+      padding: 20px 16px;
+      width: 92%;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
+
+.location-btn {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #222;
+}
+
+.location-slider-btn {
+  &-next {
+    rotate: 180deg;
+    &.swiper-button-disabled {
+      background-color: #ededed;
+    }
+  }
+  &-prev {
+    &.swiper-button-disabled {
+      background-color: #ededed;
+    }
+  }
+}
+
+.location-btn.swiper-button-disabled svg g {
+  fill: #222 !important;
+}

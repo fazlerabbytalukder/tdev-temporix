@@ -29,11 +29,11 @@
   var swiper = new Swiper(".td-brand-active", {
     slidesPerView: 1,
     spaceBetween: 10,
-    loop: true, // Enables infinite loop
+    loop: true,
     speed: 4000,
     autoplay: {
-      delay: 1, // Delay between transitions (in milliseconds)
-      disableOnInteraction: false, // Keeps autoplay running after user interactions
+      delay: 1,
+      disableOnInteraction: false,
     },
     breakpoints: {
       320: {
@@ -59,6 +59,34 @@
       1600: {
         slidesPerView: 6,
         spaceBetween: 60,
+      },
+    },
+  });
+
+  //location slider
+  var swiper = new Swiper(".td-location-slider-active", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".location-slider-btn-next",
+      prevEl: ".location-slider-btn-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
       },
     },
   });

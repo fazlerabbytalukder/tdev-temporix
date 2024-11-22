@@ -20,7 +20,10 @@
       font-weight: 700;
       line-height: 150%;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 40px;
+      @media #{$xs} {
+        margin-bottom: 30px;
+      }
     }
   }
   &-img {

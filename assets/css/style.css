@@ -3918,7 +3918,12 @@ hero section design
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .td-brands-section-title h5 {
+    margin-bottom: 30px;
+  }
 }
 .td-brands-img img {
   height: 56px;

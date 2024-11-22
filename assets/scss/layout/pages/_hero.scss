@@ -14,6 +14,9 @@ hero section design
     width: 100%;
     z-index: 10;
     position: relative;
+    @media #{$md} {
+      flex-direction: column;
+    }
     &-left {
       width: 45.9%;
       padding-left: 15.7%;
@@ -22,13 +25,19 @@ hero section design
       }
       @media #{$xl} {
         padding-left: 11.7%;
+        width: 55%;
       }
       @media #{$lg} {
         padding-left: 5%;
         width: 50%;
       }
-      @media #{$xl} {
-        width: 55%;
+      @media #{$md,$sm,$xs} {
+        width: 100%;
+        padding-left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
       }
       h1 {
         color: var(--td-white);
@@ -47,6 +56,10 @@ hero section design
         @media #{$lg} {
           font-size: 40px;
         }
+        @media #{$md} {
+          font-size: 50px;
+          text-align: center;
+        }
       }
       p {
         color: rgba(255, 255, 255, 0.8);
@@ -54,11 +67,15 @@ hero section design
         font-weight: 400;
         line-height: 30px;
         margin-bottom: 40px;
-        @media #{$xl,$lg} {
+        @media #{$xl,$lg,$md} {
           margin-bottom: 25px;
         }
         @media #{$lg} {
           font-size: 16px;
+        }
+        @media #{$md} {
+          font-size: 16px;
+          text-align: center;
         }
       }
     }
@@ -69,6 +86,9 @@ hero section design
       }
       @media #{$lg} {
         width: 50%;
+      }
+      @media #{$md} {
+        width: 100%;
       }
       img {
         width: 100%;
@@ -84,7 +104,7 @@ hero section design
     border-radius: 8px;
     padding: 24px;
     gap: 16px;
-    @media #{$xl,$lg} {
+    @media #{$xl,$lg,$md} {
       margin-top: 30px;
       padding: 15px;
     }
@@ -114,7 +134,7 @@ hero section design
     @media #{$xxlm} {
       left: -12.7%;
     }
-    @media #{$lg} {
+    @media #{$lg,$md,$sm,$xs} {
       display: none;
     }
     &-full {

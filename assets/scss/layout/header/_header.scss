@@ -7,8 +7,14 @@ header section design
   background-color: var(--td-header-bg);
   &-full {
     padding: 23px 15px;
+    @media #{$lg} {
+      padding: 15px 15px;
+    }
   }
   .nav {
+    @media #{$md,$sm,$xs} {
+      display: none;
+    }
     ul {
       list-style-type: none;
       li {
